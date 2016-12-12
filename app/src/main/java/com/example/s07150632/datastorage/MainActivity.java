@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void spRead(View v){
         SharedPreferences user = getSharedPreferences("user",MODE_PRIVATE);
-        String acount = user.getString("account","木有这个键值");
-        String pass = user.getString("pass","木有这个键值");
+        String acount = user.getString("account","没有这个键值");
+        String pass = user.getString("pass","没有这个键值");
         tv1.setText("账号："+acount+"\n"+"密码："+pass);
         Toast.makeText(this,"SharedPreferences读取成功",Toast.LENGTH_LONG).show();
     }
